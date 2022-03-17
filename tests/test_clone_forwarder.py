@@ -44,6 +44,7 @@ def test_cannot_call_init_when_forwarder_created():
     assert account == forwarder.destination()
 
 
+@pytest.fixture(scope="module")
 def test_recieve():
     # Arrange
     account = accounts[0]
